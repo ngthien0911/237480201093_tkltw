@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+p1{
+    font-size: 14;
+    font-style: italic;
+    color: white;
+    background-color: rgb(24, 192, 234);
+}
+
+p2{
+    font-size: 14;
+    font-style: italic;
+    color: yellow;
+    background-color: rgb(25, 219, 38);
+}
