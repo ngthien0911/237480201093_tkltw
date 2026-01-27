@@ -1,0 +1,26 @@
+td{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    size: 13pt;
+}
+.b{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    size: 13pt;
+}
+.c{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    size: 13pt;
+}
+.d{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:red;
+    size: 13pt;
+}
