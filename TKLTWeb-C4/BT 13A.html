@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bài 13A - Tính tổng</title>
+</head>
+
+<body>
+
+<h2>Hãy nhập hai số và click vào nút Tính tổng</h2>
+
+<input type="text" id="SoHang1"> +
+<input type="text" id="SoHang2"> =
+<input type="text" id="KetQua">
+
+<br><br>
+
+<input type="button" value="Tính tổng" onclick="tinhTong()">
+
+<script>
+function tinhTong()
+{
+    var a = parseFloat(document.getElementById("SoHang1").value);
+    var b = parseFloat(document.getElementById("SoHang2").value);
+    
+    document.getElementById("KetQua").value = a + b;
+}
+</script>
+
+</body>
+</html>

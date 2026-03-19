@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách thiết bị</title>
+</head>
+<body>
+
+<h2>Nhập thiết bị văn phòng</h2>
+
+<input type="text" id="device" placeholder="Nhập tên thiết bị">
+<button onclick="them()">Thêm</button>
+<button onclick="hienThi()">Hiển thị Computer</button>
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>Thiết bị</th>
+    </tr>
+    <tbody id="ketqua"></tbody>
+</table>
+
+<script>
+
+let danhSach = []; // mảng lưu thiết bị
+
+function them() {
+    let ten = document.getElementById("device").value;
+    danhSach.push(ten); // thêm vào mảng
+    document.getElementById("device").value = "";
+}
+
+function hienThi() {
+    let kq = document.getElementById("ketqua");
+    kq.innerHTML = "";
+
+    for(let i = 0; i < danhSach.length; i++) {
+        if(danhSach[i] === "Computer") {
+            kq.innerHTML += "<tr><td>" + danhSach[i] + "</td></tr>";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
