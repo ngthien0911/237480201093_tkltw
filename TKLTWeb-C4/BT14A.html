@@ -1,26 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tính toán</title>
+    <title>Tính toán cơ bản</title>
 </head>
 <body>
-    <h2>Nhập 2 số và click vào nút tính </h2>
-    <input type="text" id="sohang1" placeholder="Số hạng 1"> <br>
-    <input type="text" id="sohang2" placeholder="Số hạng 2"> <br>
-    <input type="text" id="ketqua" placeholder="Kết quả"> <br>
-    <input type="button" value="Tính tổng" 
-    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
-        +Number(document.getElementById('sohang2').value);">
-    <input type="button" value="Tính hiệu" 
-    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
-        -Number(document.getElementById('sohang2').value);">
-    <input type="button" value="Tính tích" 
-    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
-        *Number(document.getElementById('sohang2').value);">
-    <input type="button" value="Tính thương" 
-    onclick="ketqua.value=Number(document.getElementById('sohang1').value)
-        /Number(document.getElementById('sohang2').value);">
+
+<h2>Nhập 2 số để tính toán</h2>
+
+<input type="text" id="a" placeholder="Nhập số thứ nhất"><br>
+<input type="text" id="b" placeholder="Nhập số thứ hai"><br>
+<input type="text" id="kq" placeholder="Kết quả" readonly><br><br>
+
+<button onclick="tinhToan('cong')">Cộng</button>
+<button onclick="tinhToan('tru')">Trừ</button>
+<button onclick="tinhToan('nhan')">Nhân</button>
+<button onclick="tinhToan('chia')">Chia</button>
+
+<script>
+function tinhToan(phep) {
+    let so1 = parseFloat(document.getElementById("a").value);
+    let so2 = parseFloat(document.getElementById("b").value);
+    let ketQua;
+
+    // kiểm tra nhập số
+    if (isNaN(so1) || isNaN(so2)) {
+        alert("Vui lòng nhập số hợp lệ!");
+        return;
+    }
+
+    switch (phep) {
+        case 'cong':
+            ketQua = so1 + so2;
+            break;
+        case 'tru':
+            ketQua = so1 - so2;
+            break;
+        case 'nhan':
+            ketQua = so1 * so2;
+            break;
+        case 'chia':
+            if (so2 === 0) {
+                alert("Không thể chia cho 0!");
+                return;
+            }
+            ketQua = so1 / so2;
+            break;
+    }
+
+    document.getElementById("kq").value = ketQua;
+}
+</script>
+
 </body>
 </html>

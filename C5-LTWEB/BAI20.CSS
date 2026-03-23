@@ -1,0 +1,83 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+/* khung */
+.container {
+    width: 320px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    overflow: hidden;
+}
+
+/* tiêu đề */
+.header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* nội dung */
+.form {
+    padding: 15px;
+}
+
+/* group input */
+.group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* icon */
+.icon {
+    background: #eee;
+    padding: 8px 10px;
+}
+
+/* input */
+.group input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 1;
+}
+
+/* nút hiện mật khẩu */
+.show-btn {
+    background: #ddd;
+    padding: 5px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* mã số có icon barcode */
+.barcode {
+    background: #eee;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
