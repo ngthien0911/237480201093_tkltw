@@ -7,7 +7,7 @@ if (isset($_SESSION["user"])) {
         . $_SESSION["user"] . "</b> và Email là <b>" 
         . $_SESSION["email"] . "</b>";
 
-    echo "<br><a href='logout.php'>Đăng xuất</a>";
+    echo "<br><a href='21logout.PHP'>Đăng xuất</a>";
 } else {
     echo "Bạn chưa đăng nhập!";
 }

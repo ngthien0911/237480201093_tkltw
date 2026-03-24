@@ -16,23 +16,27 @@
         <!-- Email -->
         <div class="group">
             
-            <input type="text" placeholder="Email name">
+            <input type="text" placeholder="Email name"><br><br>
             <span class="icon">💌</span>
-            <span class="icon">@blu.edu.vn</span>
+           <input type="text" placeholder="@blu.edu.vn"> 
+            <!-- <span class="icon">@blu.edu.vn</span> -->
         </div>
 
         <!-- Password -->
         <div class="group">
             
             <input type="password" id="pass" placeholder="Password">
-            <span class="icon">🔒</span>
-            <span class="show-btn" onclick="togglePass()">Hiện</span>
+            <!--<span class="icon">🔒</span>
+            <button class="eye" onclick="togglePass()">Hiện</button>-->
+             <span class="icon">🔒</span>
+             <button type="button" onclick="togglePass()">Hiện</button>
+            
         </div>
 
         <!-- Mã số -->
         <div class="group">
             <input type="text" placeholder="Mã số">
-            <span class="barcode">|||||</span>
+            <span class="barcode">|||||||||</span>
         </div>
 
         <button>Đăng nhập</button>

@@ -12,10 +12,10 @@ if ($user == "admin" && $email == "admin@gmail.com" && $pass == "123") {
     $_SESSION["email"] = $email;
 
     echo "Thông tin đăng nhập hợp lệ <br>";
-    echo "<a href='mainpage.php'>Trang chính</a>";
+    echo "<a href='21mainpage.php'>Trang chính</a>";
 
 } else {
     echo "Sai thông tin <br>";
-    echo "<a href='BAI21.HTML'>Quay lại</a>";
+    echo "<a href='BAI21.HTML'>Quay lại</a>"; 
 }
 ?>
