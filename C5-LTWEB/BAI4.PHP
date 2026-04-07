@@ -7,7 +7,7 @@
 </head>
 <body>
     <style>
-        /* Một chút CSS để làm cái khung giống trong hình */
+        /* tạo khung */
         .box { width: 350px; border: 2px solid #000; padding: 20px; border-radius: 15px; margin: 0 auto; background: #f9f9f9; }
         .title { text-align: center; font-weight: bold; margin-bottom: 15px; text-decoration: underline; }
         input[type="text"] { width: 150px; margin-bottom: 5px; }
